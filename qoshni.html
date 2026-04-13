@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Qo‘shni mamlakatlar</title>
+</head>
+<body>
+
+<h2>Mamlakat: {{ mamlakat }}</h2>
+
+<h3>Oldingi:</h3>
+{% if oldingi %}
+    <p>{{ oldingi }}</p>
+{% else %}
+    <p>Oldingi mamlakat yo‘q ❌</p>
+{% endif %}
+
+<h3>Keyingi:</h3>
+{% if keyingi %}
+    <p>{{ keyingi }}</p>
+{% else %}
+    <p>Keyingi mamlakat yo‘q ❌</p>
+{% endif %}
+
+</body>
+</html>
